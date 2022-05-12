@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+         *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+         }
+         html{
+            scroll-behavior: smooth;
+         }
+           
+
+        .hero{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: #eff4fd;
+            position: relative;
+        }
+
+        nav{
+            display: flex;
+            width: 84%;
+            margin: auto;
+            padding: 20px 0;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo{
+            width: 300px;
+            left: 1000%;
+            cursor: pointer;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover{
+            color: orange;
+        }
+
+        .detel{
+            margin-left: 8%;
+            margin-top: 15%;
+        }
+
+        .detel h1{
+            font-size: 50px;
+            color: #212121;
+            margin-bottom: 20px;
+        }
+
+        span{
+            color: orange;
+            
+        }
+
+        .detel p{
+            color: #555;
+            line-height: 22px;
+        }
+
+        .detel a{
+            background: #212121;
+            padding: 10px 18px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+            display: inline-block;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+
+        .images{
+            width: 45%;
+            height: 80%;
+            position: absolute;
+            bottom: 0;
+            right: 100px;
+        }
+
+        .images img{
+            height: 100%;
+            position: absolute;
+            left: 80%;
+            bottom: 0;
+            transform: translateX(-50%);
+            transition: bottom 1s, left 1s;
+        }
+
+        .images:hover .shape{
+            bottom: 40px;
+        }
+
+
+
+        .social{
+            margin-left: 8%;
+            margin-top: 100px;
+        }
+
+        .social a{
+            font-size: 30px;
+            color: #212121;
+            margin-right: 20px;
+        }
+
+        .social a:hover{
+            color: orange;
+        }
+    /*About Selection */
+        #about{
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            align-items: center;           
+            padding: 90px;
+            margin-bottom: 50px;
+        }
+        #pic{
+            display: flex;
+        }
+        #pic img{
+            width: 575px;
+            height: 400px;
+        }
+        #intro{
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            padding: 10px;
+        }
+        #intro h2{
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }        
+        #skills{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            
+        }
+        
+        .row{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            height: 450px;
+            border: 1px solid black;
+            margin: 10px;
+            align-items: center;
+            text-align: justify;
+            padding: 10px;
+            border-radius: 15px;
+            background: linear-gradient(to top, orange 50%, white 50%);
+            background-size: 100% 200%;
+            transition: all .8s;
+        }
+        .box:hover{
+            background-position: left bottom;
+            color: whitesmoke;
+            border: none;
+            box-shadow: 0 0 20px orange;
+        }
+        .box img{
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            padding: 10px;
+        }
+       
+     </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="pol-3/images/logo.png"  class="logo">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                
+                <li><a href="#">HIRE ME</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+        <div class="detel">
+            <h1>I'M Jafer <span>Sadiq</span></h1>
+            <p>This is my official portfolio website to show all
+                <br> my Details and work experience
+            </p>
+            <a href="#">DOWNLOAD CV</a>
+        </div>
+        <div class="images">
+            <img src="pol-3/images/shape.png" class="shape">
+            <img src="pol-3/images/boy.png" class="boy">
+        </div>
+
+        <div class="social">
+           <a href="https://twitter.com/TiuyYuit"><i class="fab fa-twitter"></i></a>
+           <a href="https://www.instagram.com/jafer_sadiq3/"><i class="fab fa-instagram"></i></a>
+           <a href="https://chatwith.io/s/no-2"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        </div>
+        </section>
+    <section id="about">
+        <h1 class="headings">ABOUT ME</h1>
+        
+            <div id="intro">
+                <h2>Mohammad Jafer sadiq</h2>
+                <P>Hello , I am jafer , I am from Guntur, ANDHRA PRADESH.I am pursuing my bachelor in computer science and engineering as a 
+                    fresher in VIT-AP University.I'm a very hard working and honest person . my hobbies are reading, watching movies and web series ,
+                    watching cricket and playing video games. I have recently joined CSI chapter and I wish to develop my technical skills 
+                    in that club . My strengths are that I am a very good team player and I am a diligent in my work.
+                    <br>
+                    <br>                 
+
+                </P>
+            </div>
+        </div>
+    </section>    
+    <section id="services">
+        <h1 class="headings">SERVICES</h1>
+        <div class="row">
+            <div class="box">
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/pQV44sX/web-programming.png" alt="web-programming" border="0"></a>
+                <h1 class="headings">web development</h1>
+                <p>I have basic knowledge about html and css.I am trying to increase my skills in this domain
+                </p>
+                </div>
+            <div class="box">
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/18f01HP/ux-interface.png" alt="ux-interface" border="0"></a>
+                <h1 class="headings">UI/UX Design</h1>
+                <p>i have good experience in ui/ux designing . I also have some experience in photo and video editing
+                </p>
+                 </div> 
+             <div class="box">
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/BNH1z1b/programming-course.png" alt="programming-course" border="0"></a>
+                <h1 class="headings">programming</h1>
+                <p>i have good experience in object oriented programming languages like python and java 
+                </p>
+                 </div>                                    
+    </section>    
+</body>
+</html>
